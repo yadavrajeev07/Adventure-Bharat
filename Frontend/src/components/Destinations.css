@@ -1,0 +1,59 @@
+.destinations-container {
+    max-width: 1200px; /* Set a max width for the container */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add some padding */
+    text-align: center; /* Center text inside the container */
+}
+
+.destinations-container h1 {
+    font-size: 2.5rem; /* Increase the size of the main heading */
+    margin-bottom: 30px; /* Space below the heading */
+    color: #333; /* Dark color for the heading */
+}
+
+.destinations-grid {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between the cards */
+}
+
+.destination-card {
+    background-color: #fff; /* White background for cards */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden; /* Hide overflow */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animation on hover */
+}
+
+.destination-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+.destination-card img {
+    width: 100%; /* Make image responsive */
+    height: 150px; /* Set a fixed height for the image */
+    object-fit: cover; /* Cover the area without distortion */
+}
+
+.destination-card h2 {
+    font-size: 1.5rem; /* Increase font size for destination name */
+    margin: 15px 0; /* Space above and below the name */
+    color: #2c3e50; /* Darker color for names */
+}
+
+.destination-card p {
+    font-size: 1rem; /* Set font size for descriptions */
+    margin: 0 15px 15px; /* Space around the paragraph */
+    color: #666; /* Grey color for description text */
+}
+
+@media (max-width: 768px) {
+    .destinations-container {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    .destinations-container h1 {
+        font-size: 2rem; /* Smaller font size for heading */
+    }
+}

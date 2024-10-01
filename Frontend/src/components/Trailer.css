@@ -1,0 +1,13 @@
+.video{
+    display: flex;
+    justify-content: center;
+}
+div {
+    text-align: center;
+  }
+  
+  button {
+    margin-top: 10px;
+    margin-bottom: 40%;
+  }
+  
